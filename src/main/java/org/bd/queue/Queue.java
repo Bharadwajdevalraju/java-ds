@@ -35,4 +35,8 @@ public class Queue<T> {
         return size == 0;
     }
 
+    public int getSize() {
+        return size;
+    }
+
 }
