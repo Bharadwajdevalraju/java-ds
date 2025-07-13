@@ -10,7 +10,7 @@ public class Stack<T> {
     }
 
     public void push(T element) {
-        if (top >= arr.length) {
+        if (top >= arr.length-1) {
             throw new StackOverflowException("Exceeded max size");
         }
         arr[++top] = element;
