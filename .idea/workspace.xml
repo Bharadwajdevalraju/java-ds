@@ -35,6 +35,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.MaxHeapTest.addAndPeek_MaxAtRoot.executor": "Run",
+    "JUnit.MaxHeapTest.executor": "Run",
     "JUnit.QueueTest.executor": "Run",
     "JUnit.StackTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -52,18 +54,65 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.StackTest">
-    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MinHeapTest">
+    <configuration name="MaxHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bd.queue.*" />
+          <option name="PATTERN" value="org.bd.heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.bd.queue" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.queue.QueueTest" />
+      <option name="PACKAGE_NAME" value="org.bd.heap" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MaxHeapTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxHeapTest.addAndPeek_MaxAtRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ds" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bd.heap" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MaxHeapTest" />
+      <option name="METHOD_NAME" value="addAndPeek_MaxAtRoot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ds" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bd.heap" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MinHeapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinHeapTest.interleavedAddAndPoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ds" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bd.heap" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MinHeapTest" />
+      <option name="METHOD_NAME" value="interleavedAddAndPoll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,8 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MinHeapTest" />
+        <item itemvalue="JUnit.MinHeapTest.interleavedAddAndPoll" />
+        <item itemvalue="JUnit.MaxHeapTest" />
+        <item itemvalue="JUnit.MaxHeapTest.addAndPeek_MaxAtRoot" />
         <item itemvalue="JUnit.StackTest" />
-        <item itemvalue="JUnit.QueueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +164,7 @@
       <workItem from="1752407356461" duration="207000" />
       <workItem from="1752407571900" duration="4000" />
       <workItem from="1752407598054" duration="284000" />
-      <workItem from="1752407889169" duration="443000" />
+      <workItem from="1752407889169" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="feat(commit): first commit">
       <option name="closed" value="true" />
