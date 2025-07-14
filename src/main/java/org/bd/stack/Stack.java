@@ -10,7 +10,7 @@ public class Stack<T> {
     }
 
     public void push(T element) {
-        if (top >= arr.length-1) {
+        if (top >= arr.length - 1) {
             throw new StackOverflowException("Exceeded max size");
         }
         arr[++top] = element;
@@ -25,4 +25,10 @@ public class Stack<T> {
     public T peek() {
         return arr[top];
     }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    ;
 }

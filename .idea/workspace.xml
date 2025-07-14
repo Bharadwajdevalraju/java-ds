@@ -35,10 +35,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.GraphTest.executor": "Run",
+    "JUnit.GraphTest.testCycleGraph.executor": "Run",
     "JUnit.MaxHeapTest.addAndPeek_MaxAtRoot.executor": "Run",
     "JUnit.MaxHeapTest.executor": "Run",
+    "JUnit.MinHeapTest.executor": "Run",
+    "JUnit.MinHeapTest.interleavedAddAndPoll.executor": "Run",
     "JUnit.QueueTest.executor": "Run",
     "JUnit.StackTest.executor": "Run",
+    "JUnit.TreeTest.executor": "Run",
+    "JUnit.TreeTest.traversals_TwoElements.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -54,91 +60,92 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MinHeapTest">
-    <configuration name="MaxHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GraphTest">
+    <configuration name="GraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="PATTERN" value="org.bd.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.bd.heap" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MaxHeapTest" />
+      <option name="PACKAGE_NAME" value="org.bd.graph" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.graph.GraphTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxHeapTest.addAndPeek_MaxAtRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphTest.testCycleGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="PATTERN" value="org.bd.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.bd.heap" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MaxHeapTest" />
-      <option name="METHOD_NAME" value="addAndPeek_MaxAtRoot" />
+      <option name="PACKAGE_NAME" value="org.bd.graph" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.graph.GraphTest" />
+      <option name="METHOD_NAME" value="testCycleGraph" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphTest.testLargeGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bd.heap.*" />
+          <option name="PATTERN" value="org.bd.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.bd.heap" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MinHeapTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinHeapTest.interleavedAddAndPoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-ds" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.bd.heap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.bd.heap" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.heap.MinHeapTest" />
-      <option name="METHOD_NAME" value="interleavedAddAndPoll" />
+      <option name="PACKAGE_NAME" value="org.bd.graph" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.graph.GraphTest" />
+      <option name="METHOD_NAME" value="testLargeGraph" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bd.stack.*" />
+          <option name="PATTERN" value="org.bd.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.bd.stack" />
-      <option name="MAIN_CLASS_NAME" value="org.bd.stack.StackTest" />
+      <option name="PACKAGE_NAME" value="org.bd.tree" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.tree.TreeTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeTest.traversals_TwoElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ds" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bd.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bd.tree" />
+      <option name="MAIN_CLASS_NAME" value="org.bd.tree.TreeTest" />
+      <option name="METHOD_NAME" value="traversals_TwoElements" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MinHeapTest" />
-        <item itemvalue="JUnit.MinHeapTest.interleavedAddAndPoll" />
-        <item itemvalue="JUnit.MaxHeapTest" />
-        <item itemvalue="JUnit.MaxHeapTest.addAndPeek_MaxAtRoot" />
-        <item itemvalue="JUnit.StackTest" />
+        <item itemvalue="JUnit.GraphTest" />
+        <item itemvalue="JUnit.GraphTest.testLargeGraph" />
+        <item itemvalue="JUnit.GraphTest.testCycleGraph" />
+        <item itemvalue="JUnit.TreeTest" />
+        <item itemvalue="JUnit.TreeTest.traversals_TwoElements" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +171,7 @@
       <workItem from="1752407356461" duration="207000" />
       <workItem from="1752407571900" duration="4000" />
       <workItem from="1752407598054" duration="284000" />
-      <workItem from="1752407889169" duration="6051000" />
+      <workItem from="1752407889169" duration="10997000" />
     </task>
     <task id="LOCAL-00001" summary="feat(commit): first commit">
       <option name="closed" value="true" />
