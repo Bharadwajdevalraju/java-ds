@@ -5,8 +5,8 @@ import java.util.NoSuchElementException;
 public class MaxHeap {
 
     private int size;
-    private int capacity;
-    private int[] heap;
+    private final int capacity;
+    private final int[] heap;
 
     public MaxHeap(int capacity) {
         this.capacity = capacity;
@@ -79,11 +79,11 @@ public class MaxHeap {
         int value = heap[0];
         heap[0] = heap[size-1];
         size--;
-        heapDown();
+        heapifyDown();
         return value;
     }
 
-    private void heapDown() {
+    private void heapifyDown() {
         int i = 0;
         while (hasLeftChild(i)) {
             int bigIndex = leftChildIndex(i);

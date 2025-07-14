@@ -5,8 +5,8 @@ import java.util.NoSuchElementException;
 public class MinHeap {
 
     private int curSize;
-    private int size;
-    private int[] heap;
+    private final int size;
+    private final int[] heap;
 
     public MinHeap(int size) {
         this.size = size;
