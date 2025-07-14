@@ -37,6 +37,7 @@
     "Application.Main.executor": "Run",
     "JUnit.GraphTest.executor": "Run",
     "JUnit.GraphTest.testCycleGraph.executor": "Run",
+    "JUnit.GraphTest.testLargeGraph.executor": "Run",
     "JUnit.MaxHeapTest.addAndPeek_MaxAtRoot.executor": "Run",
     "JUnit.MaxHeapTest.executor": "Run",
     "JUnit.MinHeapTest.executor": "Run",
@@ -171,7 +172,7 @@
       <workItem from="1752407356461" duration="207000" />
       <workItem from="1752407571900" duration="4000" />
       <workItem from="1752407598054" duration="284000" />
-      <workItem from="1752407889169" duration="10997000" />
+      <workItem from="1752407889169" duration="11851000" />
     </task>
     <task id="LOCAL-00001" summary="feat(commit): first commit">
       <option name="closed" value="true" />
