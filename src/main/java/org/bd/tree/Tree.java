@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Tree {
 
-    int value;
+    public int value;
     public Tree left;
     public Tree right;
 
