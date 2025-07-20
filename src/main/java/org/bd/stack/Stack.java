@@ -1,34 +1,43 @@
 package org.bd.stack;
 
+import org.bd.linkedlist.ListNode;
+
+import java.util.NoSuchElementException;
+
 public class Stack<T> {
 
-    private final T[] arr;
-    private int top = -1;
-
-    public Stack(final int size) {
-        this.arr = (T[]) new Object[size];
-    }
+    private ListNode<T> top;
+    private int size;
 
     public void push(T element) {
-        if (top >= arr.length - 1) {
-            throw new StackOverflowException("Exceeded max size");
+        var newNode = new ListNode<T>(element);
+        size++;
+        if (top == null) {
+            top = newNode;
+        } else {
+            newNode.next = top;
+            top = newNode;
         }
-        arr[++top] = element;
     }
 
     public T pop() {
-        var element = peek();
-        top--;
-        return element;
+        if (top == null) throw new NoSuchElementException("Stack is empty");
+        var cur = top;
+        top = top.next;
+        size--;
+        return cur.value;
     }
 
     public T peek() {
-        return arr[top];
+        if (top == null) throw new NoSuchElementException("Stack is empty");
+        return top.value;
     }
 
     public boolean isEmpty() {
-        return top == -1;
+        return size != 0;
     }
 
-    ;
+    public int size() {
+        return size;
+    }
 }

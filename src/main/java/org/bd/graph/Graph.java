@@ -2,6 +2,7 @@ package org.bd.graph;
 
 import org.bd.stack.Stack;
 
+
 import java.util.*;
 
 public class Graph {
@@ -26,7 +27,7 @@ public class Graph {
     public List<Integer> dfs() {
         List<Integer> result = new ArrayList<>();
         Set<Integer> visited = new HashSet<>();
-        Stack<Integer> stack = new Stack<>(adjList.size());
+        Stack<Integer> stack = new Stack<>();
         stack.push(0);
         visited.add(0);
         while (!stack.isEmpty()) {
