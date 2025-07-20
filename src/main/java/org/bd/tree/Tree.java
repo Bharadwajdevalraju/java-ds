@@ -73,7 +73,7 @@ public class Tree {
 
     private List<Integer> dfs() {
         List<Integer> result = new ArrayList<>();
-        Stack<Tree> stack = new Stack<>(100);
+        Stack<Tree> stack = new Stack<>();
         stack.push(this);
         while (!stack.isEmpty()) {
             var cur = stack.pop();
